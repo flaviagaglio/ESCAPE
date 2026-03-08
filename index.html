@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>ESCAPE FROM FRANK · Flavia Gaglio</title>
+    <title>ESCAPE · Flavia Gaglio</title>
     <style>
         * {
             margin: 0;
@@ -155,7 +155,7 @@
 </head>
 <body>
     <div class="game-container">
-        <h1>ESCAPE FROM FRANK</h1>
+        <h1>ESCAPE</h1>
         <div class="status-panel">
             <span>STATO: <span id="gameStatus">IN CORSO</span></span>
         </div>
@@ -177,7 +177,7 @@
             <button class="cyber-button" id="resetBtn">⟲ RESET</button>
         </div>
         <div class="footer">
-            RAGGIUNGI LA CASA DELLA MUSICA · EVITA FRANK · USA I PULSANTI
+            RAGGIUNGI LA CASA DELLA MUSICA · EVITA F · USA I PULSANTI
         </div>
     </div>
     <script>
@@ -483,7 +483,7 @@
                 ctx.fillText('Don Aldo', dx, dy-8);
             }
 
-            // Frank
+            // F
             function drawFrank(x, y) {
                 const px = x * TILE_SIZE;
                 const py = y * TILE_SIZE;
@@ -640,7 +640,7 @@
                 if (frank.x === player.x && frank.y === player.y) {
                     gameLose = true;
                     gameRunning = false;
-                    statusSpan.textContent = 'FRANK VINCE';
+                    statusSpan.textContent = 'F VINCE';
                 }
             }
 
@@ -699,7 +699,7 @@
                     ctx.font = 'bold 48px "Courier New", monospace';
                     ctx.fillStyle = '#ff0000';
                     ctx.shadowBlur = 20;
-                    ctx.fillText('Vince Frank.', canvas.width/2-180, canvas.height/2-30);
+                    ctx.fillText('Vince F.', canvas.width/2-180, canvas.height/2-30);
                     ctx.fillText('Annullo TSO', canvas.width/2-140, canvas.height/2+30);
                     ctx.shadowBlur = 0;
                 }
